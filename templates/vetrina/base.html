@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        {% include 'vetrina/header.html' %}
+    </header>
+
+    <nav>
+         {% include 'vetrina/nav.html' %}
+    </nav>
+
+    <section>
+        {% block section %}
+        {% endblock %}
+    </section>
+
+    <footer>
+        piè pagina
+    </footer>
+</div>
+
+</body>
+</html>
