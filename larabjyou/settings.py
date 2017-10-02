@@ -100,7 +100,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'it-it'
 
 TIME_ZONE = 'UTC'
 
@@ -112,7 +112,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
+# STATICFILES_FINDERS = ('django.contrib.staticfiles.finders.FileSystemFinder',
+#                        'django.contrib.staticfiles.finders.AppDirectoriesFinder', )
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = (BASE_DIR,)
+# STATICFILES_DIRS = ('D:\\Studio\\Python\\larabjyou\\',)
 
-INTERNAL_IPS = ['127.0.0.1',]
+
+INTERNAL_IPS = ['127.0.0.1', ]
