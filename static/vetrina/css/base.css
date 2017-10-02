@@ -1,0 +1,14 @@
+#principale{
+background-image: url("../img/pretty_girl_blond.png");
+background-repeat: no-repeat;
+ background-position: right top;
+}
+
+body {
+    background-image: url("../img/bg150x600.png");
+    background-repeat: repeat-x;
+}
+
+p {
+color: "blue";
+}

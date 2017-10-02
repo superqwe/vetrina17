@@ -105,3 +105,6 @@ venv.bak/
 .idea/
 *.bat
 db.sqlite3
+static/admin/
+static/debug_toolbar/
+
