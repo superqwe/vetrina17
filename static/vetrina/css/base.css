@@ -1,20 +1,27 @@
 #principale{
-background-image: url("../img/pretty_girl_blond.png");
-background-repeat: no-repeat;
- background-position: right top;
- background-position: 100% -10%;
+  background-image:    url("../img/pretty_girl_blond.png");
+  background-repeat:   no-repeat;
+  background-position: right top;
+  background-position: 100% -10%;
 }
 
 body {
-    background-image: url("../img/bg150x600.png");
-    background-repeat: repeat-x;
+  background-image:  url("../img/bg150x600.png");
+  background-repeat: repeat-x;
+  font-family:       arial, sans-serif;
 }
 
 .navbar-default{
-background-color: transparent;
-    border-color: transparent;
+  background-color: transparent;
+  border-color:     transparent;
 }
 
-p {
-color: "blue";
+.navbar-brand{
+  font-size:      20px;
+  letter-spacing: 2px;
+  color:          red;
+}
+
+.navbar-right{
+  color: black;
 }
