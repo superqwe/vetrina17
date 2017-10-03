@@ -4,13 +4,14 @@
 {% block section %}
 
 <section>
-
+ a {{menu_perline}} b
 
     <div class="col-md-3">
         <ul>
             <li>Perline</li>
-            <li></li>
-            <li></li>
+            {% for anno in menu_perline %}
+            <li><a href="./perline/{{anno}}">{{anno}}</a></li>
+            {% endfor %}
         </ul>
 
         <ul>
