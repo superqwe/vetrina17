@@ -22,7 +22,21 @@
 
             {% include 'vetrina/1_nav.html' %}
 
-            {% block section %} {% endblock %}
+
+            <div class="row">
+                <div class="col-md-3">
+                    colonna sinistra
+                </div>
+
+                <div class="col-md-6">
+                    {% block section %} {% endblock %}
+                </div>
+
+                <div class="col-md-3" id="colonna_destra">
+                    <img src="{% static 'static/vetrina/img/pretty_girl_blond.png'%}" alt="biondona">
+                </div>
+            </div>
+
 
             {% include 'vetrina/1_footer.html' %}
         </div>
