@@ -9,3 +9,9 @@ def menu_collezioni():
 
     uncinetto = []
     return anni_perline, uncinetto
+
+def collezione_anno(tipo, anno):
+    if tipo:
+        collezione = Creazione.objects.filter(anno=anno)
+
+        return collezione

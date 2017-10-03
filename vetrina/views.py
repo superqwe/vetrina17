@@ -10,10 +10,13 @@ def home(request):
     lara = LARA
     return render_to_response('vetrina/home.html', locals(), )
 
-def collezioni(request):
+def collezioni(request, tipo=None, anno=None):
     lara = LARA
     menu_perline, menu_uncinetto = services.menu_collezioni()
-    return render_to_response('vetrina/collezioni.html', locals(), )
+    collezione_anno = services.collezione_anno(tipo, anno)
+
+    return render_to_response('vetrina/collezioni.html', locals())
+
 
 def eventi(request):
     lara = LARA

@@ -1,16 +1,16 @@
 {% extends 'vetrina/0_base.html' %}
 
+{% load staticfiles %}
 
 {% block section %}
 
 <section>
- a {{menu_perline}} b
 
     <div class="col-md-3">
         <ul>
             <li>Perline</li>
             {% for anno in menu_perline %}
-            <li><a href="./perline/{{anno}}">{{anno}}</a></li>
+            <li><a href="/vetrina/collezioni/perline/{{anno}}">{{anno}}</a></li>
             {% endfor %}
         </ul>
 
@@ -22,6 +22,21 @@
     </div>
 
     <div class="col-md-9">
+        {% if tipo %}
+        <h1>Collezione {{tipo|title}} {{anno}}</h1>
+
+        {% for creazione in collezione_anno%}
+        <article>
+            <div class="creazione">
+                <p>{{creazione}}</p>
+                <img src="{{creazione.foto}}" alt="immagine {{creazione}}">
+                <p>{{creazione.descrizione}}</p>
+                <hr>
+            </div>
+        </article>
+        {% endfor %}
+
+        {% else %}
         <h1>Collezioni</h1>
         <p>
             Proin ac nunc nec libero mattis rhoncus. In pellentesque turpis in commodo eleifend. Mauris dapibus gravida
@@ -42,6 +57,9 @@
             Donec elementum convallis erat, et facilisis nunc mollis ut. Etiam fringilla ex nec erat rhoncus
             scelerisque.
         </p>
+
+        {% endif %}
+
     </div>
 
 
