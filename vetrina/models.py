@@ -23,6 +23,6 @@ class Creazione(models.Model):
     tipo = models.ForeignKey(Tipo)
     anno = models.IntegerField()
     nome = models.CharField(max_length=50)
-    foto = models.ImageField()
+    foto = models.ImageField(upload_to='./static/vetrina/img/creazioni')
     descrizione = models.TextField()
 
