@@ -27,3 +27,17 @@ body {
 .navbar-right{
   color: black;
 }
+
+.corpo{
+  border:           1px solid white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius:    15px;
+}
+
+.creazione-articolo{
+  border:           1px solid gray;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius:    15px;
+  margin-bottom: 15px;
+  padding: 0px 15px 15px 15px;
+}

@@ -4,7 +4,9 @@
 
 {% block section %}
 
-<section>
+<section class="container">
+  <div class="row">
+
 
     <div class="col-md-2">
         <ul>
@@ -26,7 +28,7 @@
         <h1>Collezione {{tipo|title}} {{anno}}</h1>
 
         {% for creazione in collezione_anno%}
-        <article>
+        <article class="creazione-articolo">
             <div class="row titolo">
                 <div class="col-md-8">
                     <h2>{{creazione}}</h2>
@@ -38,7 +40,7 @@
                     <img src="{% static '' %}{{creazione.foto}}" alt="immagine {{creazione}}" class="img-responsive">
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-8">
                     <p>{{creazione.descrizione}}</p>
                 </div>
             </div>
@@ -71,7 +73,7 @@
     {% endif %}
 
     </div>
-
+</div>
 
 </section>
 
