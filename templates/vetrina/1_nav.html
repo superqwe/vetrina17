@@ -5,11 +5,21 @@
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/vetrina">Home</a></li>
-            <li><a href="/vetrina/collezioni">Collezioni</a></li>
-            <li><a href="/vetrina/eventi">Eventi</a></li>
-            <li><a href="/vetrina/contatti">Contatti</a></li>
-            <li><a href="/vetrina/about">About</a></li>
+            <li {% if nav_attivo == "home" %} class="active" {%endif%}>
+                <a href="/vetrina">Home</a>
+            </li>
+            <li {% if nav_attivo == "collezioni" %} class="active" {%endif%}>
+                <a href="/vetrina/collezioni">Collezioni</a>
+            </li>
+            <li {% if nav_attivo == "eventi" %} class="active" {%endif%}>
+                <a href="/vetrina/eventi">Eventi</a>
+            </li>
+            <li {% if nav_attivo == "contatti" %} class="active" {%endif%}>
+                <a href="/vetrina/contatti">Contatti</a>
+            </li>
+            <li {% if nav_attivo == "about" %} class="active" {%endif%}>
+                <a href="/vetrina/about">About</a>
+            </li>
         </ul>
     </div>
 </nav>
