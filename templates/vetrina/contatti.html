@@ -1,9 +1,11 @@
 {% extends 'vetrina/0_base.html' %}
 
+{% block colonna_sinistra %}
+{% endblock %}
 
 {% block section %}
 
-<section>
+<section class="riquadro">
     <h1>Contatti</h1>
 
     <div class="row">
@@ -33,11 +35,16 @@
                     <label for="messaggio">Messaggio</label>
                     <textarea type="text" class="form-control" id="messaggio" placeholder="Messaggio"></textarea>
                 </div>
-                <button type="submit" class="btn btn-default">Invia</button>
+                <button type="submit" class="btn btn-default">Invia Messaggio</button>
             </form>
         </div>
 
     </div>
+
+    <div class="row">
+        <div class="col-md-12">INSERIRE MAPPA GOOGLE</div>
+    </div>
+
 
 </section>
 

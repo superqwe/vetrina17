@@ -1,10 +1,36 @@
 {% extends 'vetrina/0_base.html' %}
 
+{% load static %}
+
+{% block colonna_sinistra %}
+{% endblock%}
 
 {% block section %}
 
-<section>
-    <h1>about</h1>
+<section class="riquadro">
+    <h1>{{lara}}</h1>
+    <img src="{% static 'static/vetrina/img/lara.jpg' %}" alt="lara" class="about-lara">
+    <p>
+        Non tanto tempo fa, una coreana che aveva l'hobby dell'occulto tentò il lancio di un antico ed arcano
+        sortilegio: la "Possessione Demoniaca".
+    </p>
+    <p>
+        Il sortilegio fu lanciato su di una gnocca biondona, ma riuscì solo parzialemte.
+        La mente della persona che aveva provato a controllare era così forte che fu subito libera da ogni tipo di
+        influenza.
+    </p>
+    <p>
+        La coreana allora cercò di lasciare il corpo, ma ahimè il sortilegio non era stato completato e la povera mente
+        della coreana rimase imprigionata nel corpo della persona che aveva provato a controllare.
+    </p>
+    <p>
+        Con il passare del tempo la mente della coreana si fuse a quella della persona che iniziò ad acquisire le
+        abilità della coreana.
+    </p>
+    <p>
+        La coreana era una abilissima creatrice di gioielli, e così nacque {{lara}}.
+    </p>
+
 </section>
 
 {% endblock %}
