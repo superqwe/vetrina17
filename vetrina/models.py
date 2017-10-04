@@ -26,3 +26,18 @@ class Creazione(models.Model):
     foto = models.ImageField(upload_to='./static/vetrina/img/creazioni')
     descrizione = models.TextField()
 
+
+class Evento(models.Model):
+    class Meta:
+        verbose_name = "Evento"
+        verbose_name_plural = "Eventi"
+
+    def __str__(self):
+        return '%s' % self.nome
+
+    nome = models.CharField(max_length=100)
+    luogo = models.CharField(max_length=200)
+    dal = models.DateField()
+    al = models.DateField()
+    descrizione = models.TextField()
+    link = models.URLField()

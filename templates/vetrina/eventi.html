@@ -4,14 +4,18 @@
 {% block section %}
 
 <section class="riquadro">
+
     <h1>Eventi</h1>
 
-    <article>
-        Evento 1
+    {% for evento in lista_eventi%}
+    <article class="riquadro">
+        <h2><a href="{{evento.link}}">{{evento.nome}}</a></h2>
+        <div>Dal {{evento.dal}} - Al {{evento.al}}</div>
+        <div>{{evento.luogo}}</div>
+        <div><p>{{evento.descrizione}}</p></div>
     </article>
-    <article>
-        Evento 2
-    </article>
+    {% endfor %}
+
 </section>
 
 {% endblock %}

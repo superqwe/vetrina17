@@ -8,7 +8,8 @@
 */
 
 body {
-  background-image:  url("../img/bg150x600.png");
+  background-color:  #fcf;
+  background-image:  url("../img/bg2-150x600.png");
   background-repeat: repeat-x;
   font-family:       arial, sans-serif;
 }
@@ -52,8 +53,7 @@ body {
 }
 
 .about-lara{
-  float: left;
-  width: 50%;
-  padding: 5px 15px 15px  0;
-border-radius:     15px;
+  float:             left;
+  width:             50%;
+  padding:           5px 15px 15px  0;
 }

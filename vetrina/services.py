@@ -1,6 +1,6 @@
 from pprint import pprint as pp
 
-from .models import Tipo, Creazione
+from .models import Evento, Creazione
 
 def menu_collezioni():
     perline = Creazione.objects.all()
@@ -15,3 +15,7 @@ def collezione_anno(tipo, anno):
         collezione = Creazione.objects.filter(anno=anno)
 
         return collezione
+
+def lista_eventi():
+    eventi = Evento.objects.all()
+    return eventi

@@ -24,6 +24,7 @@ def collezioni(request, tipo=None, anno=None):
 def eventi(request):
     lara = LARA
     nav_attivo = 'eventi'
+    lista_eventi = services.lista_eventi()
 
     return render_to_response('vetrina/eventi.html', locals(), )
 
