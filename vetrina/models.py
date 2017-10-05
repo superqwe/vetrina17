@@ -49,7 +49,7 @@ class Messaggio(models.Model):
         verbose_name_plural = "Messaggi"
 
     def __str__(self):
-        return '%s %s' % (self.nome, self.data)
+        return '%s -- %s' % (self.nome, self.data)
 
     nome = models.CharField(max_length=50)
     data = models.DateTimeField(auto_now=True)
