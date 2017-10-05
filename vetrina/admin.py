@@ -11,7 +11,25 @@ class CreazioneOption(admin.ModelAdmin):
     ordering = ('-anno', 'tipo', 'nome')
 
 
+class EventoOption(admin.ModelAdmin):
+    date_hierarchy = 'dal'
+    list_display = ('nome', 'luogo', 'dal', 'al', 'link', 'descrizione')
+    list_display_links = ('nome',)
+    ordering = ('-dal', 'luogo')
+
+
+class MessaggioOption(admin.ModelAdmin):
+    date_hierarchy = 'data'
+    list_display = ('nome', 'data', 'email', 'messaggio')
+    list_display_links = ('nome',)
+    ordering = ('-data',)
+
+
+class TipoOption(admin.ModelAdmin):
+    ordering = ('tipo',)
+
+
 admin.site.register(Creazione, CreazioneOption)
-admin.site.register(Evento)
-admin.site.register(Messaggio)
-admin.site.register(Tipo)
+admin.site.register(Evento, EventoOption)
+admin.site.register(Messaggio, MessaggioOption)
+admin.site.register(Tipo, TipoOption)
