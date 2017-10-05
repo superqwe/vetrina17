@@ -41,3 +41,17 @@ class Evento(models.Model):
     al = models.DateField()
     descrizione = models.TextField()
     link = models.URLField()
+
+
+class Messaggio(models.Model):
+    class Meta:
+        verbose_name = "Messaggio"
+        verbose_name_plural = "Messaggi"
+
+    def __str__(self):
+        return '%s %s' % (self.nome, self.data)
+
+    nome = models.CharField(max_length=50)
+    data = models.DateTimeField(auto_now=True)
+    email = models.EmailField()
+    messaggio = models.TextField()
