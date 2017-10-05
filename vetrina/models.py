@@ -14,8 +14,8 @@ class Tipo(models.Model):
 
 class Creazione(models.Model):
     class Meta:
-        verbose_name = "Collezione"
-        verbose_name_plural = "Collezioni"
+        verbose_name = "Creazione"
+        verbose_name_plural = "Creazioni"
 
     def __str__(self):
         return '%s' % self.nome
