@@ -56,8 +56,6 @@ def contatti(request):
                   {'form_messaggio': form_messaggio, 'nav_attivo': nav_attivo, 'lara': lara,
                    'messaggio_inviato': messaggio_inviato})
 
-    # return render_to_response('vetrina/contatti.html', locals(), )
-
 
 def about(request):
     lara = LARA
