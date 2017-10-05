@@ -1,8 +1,12 @@
-*.bat
-db*.sqlite3
 .idea/
+larabjyou/__pycache__/
 narrow/
 static/admin/
 static/debug_toolbar/
 static/vetrina/img/creazioni/
+vetrina/__pycache__/
 vetrina/migrations/
+
+*.bat
+db*.sqlite3
+static/vetrina/img/lara.JPG
