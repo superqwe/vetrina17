@@ -16,6 +16,7 @@ def home(request):
 
 
 def collezioni(request, tipo=None, anno=None):
+    #todo: zoom su click immagine
     lara = LARA
     nav_attivo = 'collezioni'
     menu_perline, menu_uncinetto = services.menu_collezioni()
@@ -25,6 +26,8 @@ def collezioni(request, tipo=None, anno=None):
 
 
 def eventi(request):
+    #todo: ordinare per data
+    #todo: link nuova finestra
     lara = LARA
     nav_attivo = 'eventi'
     lista_eventi = services.lista_eventi()
