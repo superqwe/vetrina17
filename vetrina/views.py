@@ -17,7 +17,6 @@ def home(request):
 
 def collezioni(request, tipo=None, anno=None):
     #todo: zoom su click immagine
-    #todo: annullare rientro menu collezioni
     lara = LARA
     nav_attivo = 'collezioni'
     menu_perline, menu_uncinetto = services.menu_collezioni()

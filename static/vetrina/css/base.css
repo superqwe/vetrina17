@@ -69,11 +69,17 @@ section{
   padding-top:      15px;
 }
 
+#menu-collezioni a{
+  padding-left: 0px;
+}
+
+
 h1{
   background-color: #f8f;
   margin:           0px 0px 15px 0px;
   padding:          15px;
 }
+
 
 #eventi article {
   border:           1px solid gray;
