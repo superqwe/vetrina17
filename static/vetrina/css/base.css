@@ -55,8 +55,28 @@ body {
 
 #menu-principale{
   background-color: #faf;
+  margin:           0px;
 }
 
 #menu-collezioni .sezione{
-  padding-top: 15px;
+  padding-top:      15px;
+}
+
+h1{
+  background-color: #f8f;
+  margin:           0px 0px 15px 0px;
+  padding:          15px;
+}
+
+#eventi article {
+  border:           1px solid gray;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius:    15px;
+  margin-top:     15px;
+  padding:          0px 15px 15px 15px;
+}
+
+.contatti li{
+  list-style: none;
+  margin: 0 0 20px 0;
 }

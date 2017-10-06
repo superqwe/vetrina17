@@ -11,7 +11,8 @@
     <div class="row">
 
         <div class="col-md-4 indirizzi">
-            <h2>I nostri indirizzi</h2>
+            <h2>I nostri recapiti</h2>
+            <p>Potete contattarci ai seguenti indirizzi o compilando il modulo a fianco.</p>
 
             <ul class="contatti">
                 <li><span class="glyphicon glyphicon-home"></span> Via di Qui</li>
@@ -41,13 +42,12 @@
         <!--</div>-->
 
 
-
-
         <div class="col-md-8">
             {% if messaggio_inviato%}
             <p>Messaggio inviato</p>
 
             {% else %}
+            <h2>Invia un messaggio:</h2>
 
             <form method="POST" class="post-form">{% csrf_token %}
                 {{ form_messaggio.as_p }}
