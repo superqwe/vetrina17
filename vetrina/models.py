@@ -55,3 +55,22 @@ class Messaggio(models.Model):
     data = models.DateTimeField(auto_now=True)
     email = models.EmailField()
     messaggio = models.TextField()
+
+# class Utente(models.Model):
+#     class Meta:
+#         verbose_name = "Utente"
+#         verbose_name_plural = "Utenti"
+#
+#     def __str__(self):
+#         return '%s' % self.username
+#
+#     username = models.CharField(unique=True, max_length=50)
+#     password = models.CharField(max_length=50)
+#     email = models.EmailField()
+#     nome = models.CharField(max_length=50)
+#     cognome = models.CharField(max_length=50)
+#     citta = models.CharField(max_length=50)
+#     indirizzo = models.CharField(max_length=500)
+#     cap = models.IntegerField()
+#     telefono = models.IntegerField()
+
