@@ -4,22 +4,32 @@
             <a class="navbar-brand" href="/vetrina">{{lara}}</a>
         </div>
 
-        <ul class="nav navbar-nav navbar-right  nav-pills">
-            <li role="presentation" {% if nav_attivo == "home" %} class="active" {%endif%}>
+        <div>
+            <div class="text-right">Benvenuto...</div>
+            <div>
+
+
+            <ul class="nav navbar-nav navbar-right  nav-pills">
+                <li role="presentation" {% if nav_attivo == "home" %} class="active" {%endif%}>
                 <a href="/vetrina">Home</a>
-            </li>
-            <li role="presentation" {% if nav_attivo == "collezioni" %} class="active" {%endif%}>
+                </li>
+                <li role="presentation" {% if nav_attivo == "collezioni" %} class="active" {%endif%}>
                 <a href="/vetrina/collezioni">Collezioni</a>
-            </li>
-            <li role="presentation" {% if nav_attivo == "eventi" %} class="active" {%endif%}>
+                </li>
+                <li role="presentation" {% if nav_attivo == "eventi" %} class="active" {%endif%}>
                 <a href="/vetrina/eventi">Eventi</a>
-            </li>
-            <li role="presentation" {% if nav_attivo == "contatti" %} class="active" {%endif%}>
+                </li>
+                <li role="presentation" {% if nav_attivo ==  "contatti" %} class="active" {%endif%}>
                 <a href="/vetrina/contatti">Contatti</a>
-            </li>
-            <li role="presentation" {% if nav_attivo == "about" %} class="active" {%endif%}>
+                </li>
+                <li role="presentation" {% if nav_attivo ==  "about" %} class="active" {%endif%}>
                 <a href="/vetrina/about">About</a>
-            </li>
-        </ul>
+                </li>
+                <li role="presentation" {% if nav_attivo ==  "login" %} class="active" {%endif%}>
+                <a href="/vetrina/login">Login</a>
+                </li>
+            </ul>
+        </div>
+        </div>
     </div>
 </nav>

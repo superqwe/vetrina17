@@ -65,3 +65,10 @@ def about(request):
     nav_attivo = 'about'
 
     return render_to_response('vetrina/about.html', locals(), )
+
+
+def login(request):
+    lara = LARA
+    nav_attivo = 'login'
+
+    return render_to_response('vetrina/login.html', locals(), )
