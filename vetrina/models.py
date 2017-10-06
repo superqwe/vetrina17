@@ -14,6 +14,7 @@ class Tipo(models.Model):
 
 class Creazione(models.Model):
     class Meta:
+        ordering = ['nome']
         verbose_name = "Creazione"
         verbose_name_plural = "Creazioni"
 
@@ -29,6 +30,7 @@ class Creazione(models.Model):
 
 class Evento(models.Model):
     class Meta:
+        ordering = ['-dal']
         verbose_name = "Evento"
         verbose_name_plural = "Eventi"
 

@@ -83,6 +83,15 @@ h1{
   padding:          0px 15px 15px 15px;
 }
 
+div .date{
+  font-weight: bold;
+
+}
+
+.evento .descrizione{
+  margin-top: 5px;
+}
+
 .contatti li{
   list-style: none;
   margin: 0 0 20px 0;
