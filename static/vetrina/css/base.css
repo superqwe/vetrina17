@@ -1,8 +1,15 @@
+ @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+ /*@import url('https://fonts.googleapis.com/css?family=Satisfy');*/
+
 body {
   background-color: #fcf;
   /*background-image:  url("../img/bg2-150x600.png");*/
   /*background-repeat: repeat-x;*/
-  font-family:      arial, sans-serif;
+  font-family:      'Dancing Script', cursive, arial, sans-serif;
+}
+
+section{
+    font-family:       cursive, arial, sans-serif;
 }
 
 .navbar-default{
