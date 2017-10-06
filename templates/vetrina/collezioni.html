@@ -5,20 +5,20 @@
 
 {% block colonna_sinistra %}
 
-<nav class="navbar navbar-default riquadro">
+<nav class="navbar navbar-default riquadro" id="menu-collezioni">
     <div class="container-fluid">
         <ul class="nav  nav-pills nav-stacked">
-            <li role="presentation">Perline</li>
+            <li role="presentation" class="sezione">Perline</li>
             {% for anno in menu_perline %}
             <li role="presentation"><a href="/vetrina/collezioni/perline/{{anno}}">{{anno}}</a></li>
             {% endfor %}
         </ul>
-        <ul class="nav  nav-pills nav-stacked">
-            <li role="presentation">Uncinetto</li>
-            {% for anno in menu_uncinetto %}
-            <li role="presentation"><a href="/vetrina/collezioni/uncinetto/{{anno}}">{{anno}}</a></li>
-            {% endfor %}
-        </ul>
+        <!--<ul class="nav  nav-pills nav-stacked">-->
+            <!--<li role="presentation">Uncinetto</li>-->
+            <!--{% for anno in menu_uncinetto %}-->
+            <!--<li role="presentation"><a href="/vetrina/collezioni/uncinetto/{{anno}}">{{anno}}</a></li>-->
+            <!--{% endfor %}-->
+        <!--</ul>-->
     </div>
 </nav>
 

@@ -5,14 +5,14 @@
 
 <section class="riquadro">
 
-    <h1>Eventi</h1>
+
 
     {% for evento in lista_eventi%}
-    <article class="riquadro">
+    <article class="evento riquadro">
         <h2><a href="{{evento.link}}">{{evento.nome}}</a></h2>
-        <div>Dal {{evento.dal}} - Al {{evento.al}}</div>
-        <div>{{evento.luogo}}</div>
-        <div><p>{{evento.descrizione}}</p></div>
+        <div class="date">Dal {{evento.dal}} - Al {{evento.al}}</div>
+        <div class="luogo">{{evento.luogo}}</div>
+        <div class="descrizione"><p>{{evento.descrizione}}</p></div>
     </article>
     {% endfor %}
 

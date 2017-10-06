@@ -1,63 +1,62 @@
-/*
-#principale{
-  background-image:    url("../img/pretty_girl_blond.png");
-  background-repeat:   no-repeat;
-  background-position: right top;
-  background-position: 100% -10%;
-}
-*/
-
 body {
-  background-color:  #fcf;
-  background-image:  url("../img/bg2-150x600.png");
-  background-repeat: repeat-x;
-  font-family:       arial, sans-serif;
+  background-color: #fcf;
+  /*background-image:  url("../img/bg2-150x600.png");*/
+  /*background-repeat: repeat-x;*/
+  font-family:      arial, sans-serif;
 }
 
 .navbar-default{
-  background-color:  transparent;
-  border-color:      transparent;
+  background-color: transparent;
+  border-color:     transparent;
 }
 
 .navbar-brand{
-  font-size:         20px;
-  letter-spacing:    2px;
-  color:             red;
+  font-size:        20px;
+  letter-spacing:   2px;
+  color:            red;
 }
 
 .navbar-right{
-  color:             black;
+  color:            black;
 }
 
 .corpo{
-  border:            1px solid white;
-  background-color:  rgba(255, 255, 255, 0.3);
-  border-radius:     15px;
+  border:           1px solid white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius:    15px;
 }
 
 .creazione-articolo{
-  border:            1px solid gray;
-  background-color:  rgba(255, 255, 255, 0.3);
-  border-radius:     15px;
-  margin-bottom:     15px;
-  padding:           0px 15px 15px 15px;
+  border:           1px solid gray;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius:    15px;
+  margin-bottom:    15px;
+  padding:          0px 15px 15px 15px;
 }
 
 
 .riquadro{
-  border:            1px solid gray;
-  background-color:  rgba(255, 255, 255, 0.3);
-  border-radius:     15px;
-  margin-bottom:     15px;
-  padding:           0px 15px 15px 15px;
+  border:           1px solid gray;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius:    15px;
+  margin-bottom:    15px;
+  padding:          0px 15px 15px 15px;
 }
 
 .about-lara{
-  float:             left;
-  width:             50%;
-  padding:           5px 15px 15px  0;
+  float:            left;
+  width:            50%;
+  padding:          5px 15px 15px  0;
 }
 .rosso{
-  color: red;
-  font-weight: bolder;
+  color:            red;
+  font-weight:      bolder;
+}
+
+#menu-principale{
+  background-color: #faf;
+}
+
+#menu-collezioni .sezione{
+  padding-top: 15px;
 }
